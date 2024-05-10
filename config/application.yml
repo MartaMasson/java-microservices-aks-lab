@@ -25,6 +25,11 @@ spring:
     open-in-view: false
     hibernate:
       ddl-auto: none
+  jms:
+  servicebus:
+    connection-string: ${spring.jms.servicebus.connectionstring}
+    idle-timeout: 60000
+    pricing-tier: premium      
 
 # Spring Boot 1.5 makes actuator secure by default
 management.security.enabled: false
