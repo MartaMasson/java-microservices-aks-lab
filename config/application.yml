@@ -29,7 +29,7 @@ spring:
   servicebus:
     connection-string: ${spring.jms.servicebus.connectionstring}
     idle-timeout: 60000
-    pricing-tier: premium      
+    #pricing-tier: premium      
 
 # Spring Boot 1.5 makes actuator secure by default
 management.security.enabled: false
